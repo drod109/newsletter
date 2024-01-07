@@ -1,0 +1,114 @@
+/* Font import */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Document reset */
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+/* Variable declarations */
+:root {
+    /* Primary Color */
+    --clr-tomato: hsl(4, 100%, 67%);
+    
+    /* Neutral Colors */
+    --clr-slate-grey: hsl(234, 29%, 20%);
+    --clr-charcoal-grey: hsl(235, 18%, 26%);
+    --clr-grey: hsl(231, 7%, 60%);
+    --clr-white: hsl(0, 0%, 100%); 
+}
+
+/* Initial styling & input resets */
+html,
+body {
+    font-family: Roboto, sans-serif, system-ui;
+    background-color: var(--clr-charcoal-grey);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+input,
+textarea,
+button,
+select,
+a {
+    font: inherit;
+}
+a:hover,
+a:focus {
+    font: inherit;
+}
+.newsl-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.newsl-card {
+    display: flex;
+    flex-direction: row-reverse;
+    background: white;
+    padding: 1.25rem;
+    border-radius: 1.875rem;
+}
+.newsl-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 2.25rem;
+}
+.newsl-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.newsl-list-item > img {
+    width: 20px;
+    height: 20px;
+}
+.newsl-list-item {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    padding: 0.625rem;
+}
+label {
+    position: relative;
+    display: block;
+    left: -6px;
+    padding: 5px;
+    font-weight: 700;
+}
+input::placeholder {
+    padding-left: 1.25rem;
+}
+input[type="email"] {
+    width: 100%;
+    height: 3rem;
+    border-radius: 0.325rem;
+    outline: 1px solid var(--clr-grey);
+}
+.success-card {
+    background: var(--clr-white);
+    max-width: 25rem;
+    border-radius: 1.875rem;
+    padding: 1.25rem;
+}
+.author {
+    color: var(--clr-white);
+    font-size: 0.75rem;
+}
+.author a {
+    color: inherit;
+}
+.author a:hover {
+    color: var(--clr-tomato);
+}
