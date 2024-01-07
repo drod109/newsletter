@@ -96,11 +96,19 @@ input[type="email"] {
     border-radius: 0.325rem;
     outline: 1px solid var(--clr-grey);
 }
+.btn {
+    height: 3rem;
+    border-radius: 0.325rem;
+    width: 100%;
+    background: var(--clr-slate-grey);
+    color: var(--clr-white);
+    margin-top: 0.625rem;
+}
 .success-card {
     background: var(--clr-white);
     max-width: 25rem;
     border-radius: 1.875rem;
-    padding: 1.25rem;
+    padding: 1.50rem;
 }
 .author {
     color: var(--clr-white);
