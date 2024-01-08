@@ -30,7 +30,7 @@ Users should be able to:
 ### Screenshot
 
 ![Project Screenshot1](https://i.postimg.cc/pXjXd0Bq/newsletter-1-screenshot.png)
-![Project Screenshot2](hhttps://i.postimg.cc/QNwdhLcF/newsletter-2-screenshot.png)
+![Project Screenshot2](https://i.postimg.cc/QNwdhLcF/newsletter-2-screenshot.png)
 
 ### Links
 
