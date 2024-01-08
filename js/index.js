@@ -6,8 +6,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const newslSection = document.querySelector(".newsl-wrapper");
   const successSection = document.getElementById("success-wrapper");
   const successEmailSpan = document.querySelector(".success-email");
-  const author1 = document.querySelector(".author1");
-  const author2 = document.querySelector(".author2");
 
   subscribeButton.addEventListener("click", function () {
     const email = emailInput.value;
@@ -35,16 +33,12 @@ document.addEventListener("DOMContentLoaded", function () {
     if (isSuccessVisible) {
       newslSection.style.display = "none";
       successSection.style.display = "block";
-      author1.style.display = "none";
-      author2.style.display = "block";
     } else {
       newslSection.style.display = "block";
       successSection.style.display = "none";
       emailInput.value = "";
       emailInput.style = "";
       errorSpan.style.display = "none";
-      author1.style.display = "block";
-      author2.style.display = "none";
     }
   }
 });

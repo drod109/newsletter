@@ -136,21 +136,17 @@ input[type="email"] {
 .success-email {
     font-weight: 700;
 }
-.author1,
-.author2 {
+.author {
     color: var(--clr-white);
     font-size: 0.75rem;
 }
-.author1 a,
-.author2 a {
+.author a {
     color: inherit;
 }
-.author1 a:hover,
-.author2 a:hover {
+.author a:hover {
     color: var(--clr-tomato);
 }
-#success-wrapper,
-.author2 {
+#success-wrapper {
     display: none;
 }
 @media (max-width: 748px) {
