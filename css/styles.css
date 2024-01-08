@@ -110,6 +110,7 @@ input[type="email"] {
     width: 100%;
     background: var(--clr-slate-grey);
     color: var(--clr-white);
+    cursor: pointer;
     
 }
 .btn:hover {
