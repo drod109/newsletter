@@ -35,7 +35,7 @@ Users should be able to:
 ### Links
 
 - Live Site Primary URL: [Newsletter Sign-up Preview](https://drod109.github.io/newsletter/)
-- Live Site Backup URL: [Newsletter Sign-up Preview](https://drod109.github.io/newsletter/)
+- Live Site Backup URL: [Newsletter Sign-up Preview](https://codepen.io/drodrigues/full/mdoEPpq)
 
 ## My process
 
