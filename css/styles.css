@@ -31,6 +31,7 @@ html,
 body {
     font-family: Roboto, sans-serif, system-ui;
     background-color: var(--clr-charcoal-grey);
+    font-weight: 400;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -63,7 +64,10 @@ a:focus {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    padding: 2.25rem;
+    padding: 2.75rem;
+}
+.newsl-header {
+    font-size: 4rem;
 }
 .newsl-list {
     display: flex;
@@ -78,45 +82,72 @@ a:focus {
     display: flex;
     align-items: center;
     gap: 0.625rem;
-    padding: 0.625rem;
+    padding: 0.625rem 0;
 }
-label {
-    position: relative;
-    display: block;
-    left: -6px;
-    padding: 5px;
+.input-label {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
     font-weight: 700;
+    padding: 10px 0;
 }
-input::placeholder {
-    padding-left: 1.25rem;
+.error-msg {
+    display: none;
+    color: var(--clr-tomato);
+    font-weight: 700;
 }
 input[type="email"] {
     width: 100%;
     height: 3rem;
-    border-radius: 0.325rem;
+    border-radius: 0.425rem;
     outline: 1px solid var(--clr-grey);
+    text-indent: 1.25rem;
 }
 .btn {
     height: 3rem;
-    border-radius: 0.325rem;
+    border-radius: 0.425rem;
     width: 100%;
     background: var(--clr-slate-grey);
     color: var(--clr-white);
-    margin-top: 0.625rem;
+    
+}
+.btn:hover {
+    background-color: var(--clr-tomato);
+    box-shadow: 0.188rem 0.688rem 1.438rem -0.688rem hsl(4, 100%, 67%);
 }
 .success-card {
     background: var(--clr-white);
-    max-width: 25rem;
+    max-width: 30rem;
     border-radius: 1.875rem;
-    padding: 1.50rem;
+    padding: 3rem;
 }
-.author {
+.success-header {
+    padding-top: 25px;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 2.8rem;
+}
+.success-msg {
+    padding: 15px 0;
+    line-height: 25px;
+}
+.success-email {
+    font-weight: 700;
+}
+.author1,
+.author2 {
     color: var(--clr-white);
     font-size: 0.75rem;
 }
-.author a {
+.author1 a,
+.author2 a {
     color: inherit;
 }
-.author a:hover {
+.author1 a:hover,
+.author2 a:hover {
     color: var(--clr-tomato);
+}
+#success-wrapper,
+.author2 {
+    display: none;
 }
