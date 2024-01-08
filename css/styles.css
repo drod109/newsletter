@@ -52,6 +52,7 @@ a:focus {
 .newsl-wrapper {
     display: flex;
     flex-direction: column;
+    padding: 0 1.25rme;
 }
 .newsl-card {
     display: flex;
@@ -150,4 +151,26 @@ input[type="email"] {
 #success-wrapper,
 .author2 {
     display: none;
+}
+@media (max-width: 748px) {
+    .newsl-card {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    .newsl-header {
+        font-size: 2.8rem;
+    }
+    .newsl-img-wrapper img {
+        width: 100%;
+    }
+    .newsl-img-wrapper {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        
+    }
+    .newsl-content {
+        padding: 2.75rem;
+    }
 }
