@@ -168,9 +168,20 @@ input[type="email"] {
         display: flex;
         justify-content: center;
         padding: 0;
-        
     }
     .newsl-content {
         padding: 2.75rem;
+    }
+    .newsl-msg {
+        padding: 15px 0;
+    }
+    .btn-primary {
+        margin: 1.25rem 0;
+    }
+}
+@media (max-width: 375px) {
+    body {
+        background: var(--clr-white);
+        padding: 0
     }
 }
