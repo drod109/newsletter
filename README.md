@@ -29,12 +29,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Project Screenshot1](https://i.postimg.cc/pXjXd0Bq/newsletter-1-screenshot.png)
+![Project Screenshot2](hhttps://i.postimg.cc/QNwdhLcF/newsletter-2-screenshot.png)
 
 ### Links
 
-- Live Site Primary URL: [Newsletter Sign-up Preview](https://i.postimg.cc/pXjXd0Bq/newsletter-1-screenshot.png)
-- Live Site Backup URL: [Newsletter Sign-up Preview](https://i.postimg.cc/QNwdhLcF/newsletter-2-screenshot.png)
+- Live Site Primary URL: [Newsletter Sign-up Preview](https://drod109.github.io/newsletter/)
+- Live Site Backup URL: [Newsletter Sign-up Preview](https://drod109.github.io/newsletter/)
 
 ## My process
 
