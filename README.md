@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Live Site Primary URL: [Live Site Preview](https://i.postimg.cc/pXjXd0Bq/newsletter-1-screenshot.png)
-- Live Site Backup URL: [Live Site Preview](https://i.postimg.cc/QNwdhLcF/newsletter-2-screenshot.png)
+- Live Site Primary URL: [Newsletter Sign-up Preview](https://i.postimg.cc/pXjXd0Bq/newsletter-1-screenshot.png)
+- Live Site Backup URL: [Newsletter Sign-up Preview](https://i.postimg.cc/QNwdhLcF/newsletter-2-screenshot.png)
 
 ## My process
 
