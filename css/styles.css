@@ -16,20 +16,36 @@
 
 /* Variable declarations */
 :root {
-    /* Primary Color */
+    /* Color Scheme */
     --clr-tomato: hsl(4, 100%, 67%);
-    
-    /* Neutral Colors */
     --clr-slate-grey: hsl(234, 29%, 20%);
     --clr-charcoal-grey: hsl(235, 18%, 26%);
     --clr-grey: hsl(231, 7%, 60%);
     --clr-white: hsl(0, 0%, 100%); 
+
+    /* Font Sizes */
+    --font-large: 3rem;
+    --font-med-lg: 2.5rem;
+    --font-medium: 1.5rem;
+    --font-small: 1rem;
+
+    /* Spacings */
+    --spacing-small: 0.5rem;
+    --spacing-medium: 1rem;
+    --spacing-large: 2rem;
+    --spacing-xlarge: 3rem;
+
+    /* Breakpoints */
+    --breakpoint-mobile: 480px;
+    --breakpoint-tablet: 768px;
 }
 
-/* Initial styling & input resets */
-html,
+/* Base styles */
+html {
+font-family: Roboto, sans-serif, system-ui;
+font-size: 16px;
+}
 body {
-    font-family: Roboto, sans-serif, system-ui;
     background-color: var(--clr-charcoal-grey);
     font-weight: 400;
     display: flex;
@@ -49,10 +65,27 @@ a:hover,
 a:focus {
     font: inherit;
 }
+
+/* Resuable Styles */
+.btn {
+    height: 3rem;
+    border-radius: 0.425rem;
+    width: 100%;
+    background: var(--clr-slate-grey);
+    color: var(--clr-white);
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: var(--spacing-medium) 0 ;
+}
+.btn:hover {
+    background-color: var(--clr-tomato);
+    box-shadow: 0.188rem 0.688rem 1.438rem -0.688rem hsl(4, 100%, 67%);
+}
+
 .newsl-wrapper {
     display: flex;
     flex-direction: column;
-    padding: 0 1.25rme;
+    padding: 0 var(--spacing-medium);
 }
 .newsl-card {
     display: flex;
@@ -69,12 +102,16 @@ a:focus {
     padding: 2.75rem;
 }
 .newsl-header {
-    font-size: 3.8rem;
+    font-size: var(--font-med-lg);
+    font-weight: 700;
+    color: var(--clr-slate-grey);
 }
 .newsl-list {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-size: var(--font-small);
+    font-weight: 400;
 }
 .newsl-list-item > img {
     width: 20px;
@@ -83,8 +120,10 @@ a:focus {
 .newsl-list-item {
     display: flex;
     align-items: center;
-    gap: 0.625rem;
-    padding: 0.625rem 0;
+    gap: var(--spacing-small);
+    padding: var(--spacing-small) 0;
+    background: url('images/icon-success.svg') no-repeat left center;
+    margin-bottom: var(--spacing-small);
 }
 .input-label {
     display: flex;
@@ -101,28 +140,17 @@ a:focus {
 input[type="email"] {
     width: 100%;
     height: 3rem;
-    border-radius: 0.425rem;
+    border-radius: var(--spacing-small);
     outline: 1px solid var(--clr-grey);
-    text-indent: 1.25rem;
-}
-.btn {
-    height: 3rem;
-    border-radius: 0.425rem;
-    width: 100%;
-    background: var(--clr-slate-grey);
-    color: var(--clr-white);
-    cursor: pointer;
-    
-}
-.btn:hover {
-    background-color: var(--clr-tomato);
-    box-shadow: 0.188rem 0.688rem 1.438rem -0.688rem hsl(4, 100%, 67%);
+    text-indent: var(--spacing-medium);
+    padding: var(--spacing-small); 
+    font-size: var(--font-small);
 }
 .success-card {
     background: var(--clr-white);
     max-width: 30rem;
     border-radius: 1.875rem;
-    padding: 3rem;
+    padding: var(--spacing-xlarge);
 }
 .success-header {
     padding-top: 25px;
@@ -150,11 +178,9 @@ input[type="email"] {
 #success-wrapper {
     display: none;
 }
-@media (max-width: 748px) {
+ @media (max-width: 768px) {
     .newsl-card {
-        display: flex;
         flex-direction: column;
-        padding: 0;
     }
     .newsl-header {
         font-size: 2.8rem;
@@ -177,10 +203,13 @@ input[type="email"] {
         margin: 1.25rem 0;
     }
 }
-@media (max-width: 375px) {
+@media (max-width: 480px) {
     body {
         background: var(--clr-white);
         padding: 0
+    }
+    .newsl-card {
+        flex-direction: column;
     }
     .newsl-header {
         font-size: 2.2rem;
